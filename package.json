@@ -1,0 +1,92 @@
+{
+  "name": "wirecash-client",
+  "version": "0.000.006",
+  "description": "Client facing WireCash application",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "node api/server | webpack-dev-server --open --config webpack.dev.js",
+    "api": "node api/server",
+    "test": "jest --no-cache"
+  },
+  "author": "Micah Blu",
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.(tsx|ts)?$": "typescript-babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleNameMapper": {
+      "^.+\\.scss$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/react": "^15.6.11",
+    "@types/react-addons-transition-group": "^15.0.1",
+    "@types/react-dom": "^15.5.6",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.8",
+    "enzyme": "^2.8.2",
+    "express": "^4.16.2",
+    "file-loader": "^0.11.1",
+    "handlebars-webpack-plugin": "^1.3.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-cli": "^22.1.3",
+    "local-web-server": "^2.3.0",
+    "node-sass": "^4.7.2",
+    "react-hot-loader": "^3.1.3",
+    "react-test-renderer": "^15.6.2",
+    "regenerator-runtime": "^0.10.5",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "ts-jest": "^20.0.14",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.6.2",
+    "typescript-babel-jest": "^1.0.5",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "url-loader": "^0.5.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0",
+    "webpack-merge": "^4.1.1",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bootstrap": "^3.3.7",
+    "eslint": "^3.19.0",
+    "history": "^4.7.2",
+    "le_js": "git+https://github.com/rapid7/le_js.git",
+    "moment": "^2.20.1",
+    "q": "^1.5.1",
+    "react": "^15.6.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^0.31.5",
+    "react-c3js": "^0.1.20",
+    "react-d3-basic": "^1.6.11",
+    "react-dom": "^15.6.2",
+    "react-infinite-calendar": "^2.3.1",
+    "react-modal": "^2.4.1",
+    "react-phone-input-2": "^2.0.1",
+    "react-redux": "^5.0.6",
+    "react-redux-router": "0.0.14",
+    "react-select": "^1.2.1",
+    "redux": "^3.7.2",
+    "redux-logic": "^0.12.3",
+    "rxjs": "^5.5.6"
+  }
+}
